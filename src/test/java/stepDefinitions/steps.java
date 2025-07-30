@@ -19,6 +19,7 @@ public class steps extends RequestSpec{
 	@Given("Add Place Payload")
 	public void add_place_payload() throws IOException {
 		reqSpec=given().log().all().spec(spec()).body(Payload.payload1());
+		System.out.println("    ");
 	
 	}
 	
